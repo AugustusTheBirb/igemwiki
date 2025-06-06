@@ -2,6 +2,8 @@ import React from "react";
 import { navigationData } from "./navigationData.js"
 import { Link } from "gatsby"
 import { useState } from "react";
+import logo from "../../images/juodas.svg"
+
 
 function Navigation() {
     
@@ -15,9 +17,9 @@ function Navigation() {
     }}
     
     return (
-        <nav className="bg-igem-blue flex justify-between w-screen h-16 items-center pr-8">
+        <nav className="sticky bg-igem-blue flex justify-between w-screen h-16 items-center pr-8 w-screen">
             <Link to="/" className="flex align-center">
-                <img src="/static/juodas.svg" alt="igem logo" className="h-16 w-16" />
+                <img src={logo} alt="igem logo" className="h-16 w-16" />
             </Link>
             <ul className="flex justify-around gap-8">
           {navigationData.map((item, index) => (

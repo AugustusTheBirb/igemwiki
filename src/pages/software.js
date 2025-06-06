@@ -2,17 +2,17 @@ import * as React from "react"
 import '../styles/global.css'
 import Navigation from "../components/navigation/Navigation"
 
-const Design = () => {
+const Software = () => {
   return (
     <>
     <Navigation/>
     <main className="">
-      <h1 className="bg-igem-white">Design</h1>
+      <h1 className="bg-igem-white">Software</h1>
     </main>
     </>
   )
 }
 
-export default Design
+export default Software
 
-export const Head = () => <title>Design</title>
+export const Head = () => <title>Software</title>
